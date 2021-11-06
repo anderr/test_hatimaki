@@ -1,0 +1,72 @@
+@keyframes slideDownForBefore{
+  0%{
+    transform: translateY(-6px);
+  }
+  25%, 75%{
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: translateY(0) rotateZ(-45deg);
+  }
+}
+
+@keyframes slideUpForAfter{
+  0%{
+    transform: translateY(10px);
+  }
+  25%, 75% {
+    transform: translateY(-4px);
+  }
+  50%, 75% {
+    transform:  translateY(-2px) rotateZ(0deg);
+  }
+  100% {
+    transform: translateY(-2px) rotateZ(45deg);
+  }
+}
+
+@keyframes disappear {
+  0%{
+    background-color: #fefefe;
+  }
+  50%, 100%{
+    background-color: transparent;
+  }
+}
+
+/* Reverse Effect */
+@keyframes re-slideUpForAfter{
+  0%{
+    transform: translateY(-5px) rotateZ(50deg);
+  }
+  25%, 75% {
+    transform:  translateY(-5px) rotateZ(0deg);
+  }
+  50%, 75% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(4px);
+  }
+}
+
+@keyframes re-slideDownForBefore{
+  0%{
+    transform: translateY(0px) rotateZ(-50deg);
+  }
+  25%, 75%{
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes re-disappear {
+  0%{
+    background-color: transparent;
+  }
+  50%, 100%{
+    background-color: #fefefe;
+  }
+}
